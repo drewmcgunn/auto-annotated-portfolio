@@ -32,28 +32,28 @@ sections:
       actions:
         justifyContent: center
     type: HeroSection
-  - type: FeaturedProjectsSection
-    elementId: books
-    colors: colors-f
-    subtitle: My Books
-    projects:
-      - content/pages/projects/a-hard-reset.md
-      - content/pages/projects/lone-star-reloaded.md
-    actions:
-      - type: Link
-        label: See all on Amazon
-        url: 'https://www.amazon.com/stores/Drew-McGunn/author/B09QF2LCY3'
-    styles:
-      self:
-        width: wide
-        padding:
-          - pt-24
-          - pb-24
-          - pl-4
-          - pr-4
-        justifyContent: center
-      subtitle:
-        textAlign: center
+  # - type: FeaturedProjectsSection # This section is temporarily hidden. We will add it back once we create the individual project pages.
+  #   elementId: books
+  #   colors: colors-f
+  #   subtitle: My Books
+  #   projects:
+  #     - content/pages/projects/a-hard-reset.md
+  #     - content/pages/projects/lone-star-reloaded.md
+  #   actions:
+  #     - type: Link
+  #       label: See all on Amazon
+  #       url: 'https://www.amazon.com/stores/Drew-McGunn/author/B09QF2LCY3'
+  #   styles:
+  #     self:
+  #       width: wide
+  #       padding:
+  #         - pt-24
+  #         - pb-24
+  #         - pl-4
+  #         - pr-4
+  #       justifyContent: center
+  #     subtitle:
+  #       textAlign: center
   - type: CtaSection
     elementId: about
     colors: colors-f
@@ -72,34 +72,35 @@ sections:
           - pb-24
           - pl-4
           - pr-4
-  - type: FeaturedPostsSection
-    elementId: blog
-    colors: colors-f
-    variant: variant-d
-    subtitle: Latest News
-    posts:
-      - content/pages/blog/post-one.md
-      - content/pages/blog/post-two.md
-      - content/pages/blog/post-three.md
-    actions:
-      - type: Link
-        label: See all posts
-        url: /blog
-    styles:
-      self:
-        width: wide
-        padding:
-          - pt-28
-          - pb-48
-          - pl-4
-          - pr-4
+  # - type: FeaturedPostsSection # This section is temporarily hidden. We will add it back once we create the individual blog post pages.
+  #   elementId: blog
+  #   colors: colors-f
+  #   variant: variant-d
+  #   subtitle: Latest News
+  #   posts:
+  #     - content/pages/blog/post-one.md
+  #     - content/pages/blog/post-two.md
+  #     - content/pages/blog/post-three.md
+  #   actions:
+  #     - type: Link
+  #       label: See all posts
+  #       url: /blog
+  #   styles:
+  #     self:
+  #       width: wide
+  #       padding:
+  #         - pt-28
+  #         - pb-48
+  #         - pl-4
+  #         - pr-4
   - type: ContactSection
     colors: colors-f
     elementId: contact
     backgroundSize: full
     title: Join the Adventure
     text: >-
-        Get updates on new releases, exclusive content, and behind-the-scenes news. No spam, ever.
+      Get updates on new releases, exclusive content, and behind-the-scenes
+      news. No spam, ever.
     form:
       type: FormBlock
       elementId: newsletter-form
@@ -121,3 +122,4 @@ sections:
           - pl-4
           - pr-4
 ---
+
