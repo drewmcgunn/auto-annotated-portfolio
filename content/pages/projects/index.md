@@ -1,109 +1,124 @@
 ---
-type: ProjectFeedLayout
-title: Projects
-colors: colors-a
-backgroundImage:
-  type: BackgroundImage
-  url: /images/bg1.jpg
-  backgroundSize: cover
-  backgroundPosition: center
-  backgroundRepeat: no-repeat
-  opacity: 50
-projectFeed:
-  type: ProjectFeedSection
-  colors: colors-f
-  showDate: false
-  showDescription: true
-  showReadMoreLink: true
-  showFeaturedImage: true
-  variant: variant-a
-  styles:
-    self:
-      width: narrow
-      padding:
-        - pt-0
-        - pl-4
-        - pr-4
-        - pb-12
-topSections:
-  - type: HeroSection
-    title: Projects
-    subtitle: ''
-    actions: []
+type: PageLayout
+title: Drew McGunn - Author Website
+sections:
+  - elementId: home
     colors: colors-f
     backgroundSize: full
-    elementId: ''
+    title: A System Crashed. A Life Rebooted.
+    subtitle: >-
+      Dive into the new LitRPG series from Drew McGunn. "A Hard Reset" is the
+      beginning of an epic adventure in the System Integration Chronicles.
+    actions:
+      - type: Button
+        label: Buy on Amazon
+        url: 'https://www.amazon.com/Hard-Reset-System-Integration-Chronicles-ebook/dp/B0FDYNSJ5W'
+        style: primary
     styles:
       self:
         height: auto
-        width: narrow
+        width: wide
         padding:
-          - pt-16
-          - pb-16
+          - pt-36
+          - pb-48
           - pl-4
           - pr-4
-        flexDirection: row
-        textAlign: left
-bottomSections:
-  - type: ContactSection
-    backgroundSize: full
-    title: "Let’s talk... \U0001F4AC"
+        alignItems: center
+        justifyContent: center
+      title:
+        textAlign: center
+      subtitle:
+        textAlign: center
+      actions:
+        justifyContent: center
+    type: HeroSection
+  - type: FeaturedProjectsSection
+    elementId: books
     colors: colors-f
-    form:
-      type: FormBlock
-      elementId: sign-up-form
-      fields:
-        - name: firstName
-          label: First Name
-          hideLabel: true
-          placeholder: First Name
-          isRequired: true
-          width: 1/2
-          type: TextFormControl
-        - name: lastName
-          label: Last Name
-          hideLabel: true
-          placeholder: Last Name
-          isRequired: false
-          width: 1/2
-          type: TextFormControl
-        - name: email
-          label: Email
-          hideLabel: true
-          placeholder: Email
-          isRequired: true
-          width: full
-          type: EmailFormControl
-        - name: message
-          label: Message
-          hideLabel: true
-          placeholder: Tell me about your project
-          isRequired: true
-          width: full
-          type: TextareaFormControl
-        - name: updatesConsent
-          label: Sign me up to recieve my words
-          isRequired: false
-          width: full
-          type: CheckboxFormControl
-      submitLabel: "Submit \U0001F680"
-      styles:
-        self:
-          textAlign: center
+    subtitle: My Books
+    projects:
+      - content/pages/projects/a-hard-reset.md
+      - content/pages/projects/lone-star-reloaded.md
+    actions:
+      - type: Link
+        label: See all on Amazon
+        url: 'https://www.amazon.com/stores/Drew-McGunn/author/B09QF2LCY3'
     styles:
       self:
-        height: auto
-        width: narrow
-        margin:
-          - mt-0
-          - mb-0
-          - ml-4
-          - mr-4
+        width: wide
         padding:
           - pt-24
           - pb-24
-          - pr-4
           - pl-4
-        flexDirection: row
-        textAlign: left
+          - pr-4
+        justifyContent: center
+      subtitle:
+        textAlign: center
+  - type: CtaSection
+    elementId: about
+    colors: colors-f
+    title: About the Author
+    text: >-
+      Drew McGunn is a writer of thrilling what-ifs and epic adventures. After
+      completing the seven-book Alt-History saga, "The Lone Star Reloaded," he
+      has ventured into the digital realms of LitRPG with his new series, "The
+      System Integration Chronicles."
+    actions: []
+    styles:
+      self:
+        width: wide
+        padding:
+          - pt-24
+          - pb-24
+          - pl-4
+          - pr-4
+  # - type: FeaturedPostsSection # This section is temporarily hidden. We will add it back once we create the individual blog post pages.
+  #   elementId: blog
+  #   colors: colors-f
+  #   variant: variant-d
+  #   subtitle: Latest News
+  #   posts:
+  #     - content/pages/blog/post-one.md
+  #     - content/pages/blog/post-two.md
+  #     - content/pages/blog/post-three.md
+  #   actions:
+  #     - type: Link
+  #       label: See all posts
+  #       url: /blog
+  #   styles:
+  #     self:
+  #       width: wide
+  #       padding:
+  #         - pt-28
+  #         - pb-48
+  #         - pl-4
+  #         - pr-4
+  - type: ContactSection
+    colors: colors-f
+    elementId: contact
+    backgroundSize: full
+    title: Join the Adventure
+    text: >-
+      Get updates on new releases, exclusive content, and behind-the-scenes
+      news. No spam, ever.
+    form:
+      type: FormBlock
+      elementId: newsletter-form
+      fields:
+        - name: email
+          label: Email
+          hideLabel: true
+          placeholder: Enter your email
+          isRequired: true
+          width: full
+          type: EmailFormControl
+      submitLabel: Sign Up
+    styles:
+      self:
+        width: narrow
+        padding:
+          - pt-24
+          - pb-24
+          - pl-4
+          - pr-4
 ---
